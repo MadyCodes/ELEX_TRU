@@ -3,6 +3,7 @@ const express = require('express');
 const connectDB = require('./config/db');
 const authRoutes = require('./routes/authRoutes');
 const deviceRoutes = require('./routes/deviceRoutes');
+const userRoutes = require('./routes/userRoutes');
 const dotenv = require('dotenv');
 
 // Load environment variables
@@ -19,6 +20,8 @@ app.use(express.json());
 // Route definitions
 app.use('/api/auth', authRoutes);
 app.use('/api/devices', deviceRoutes);
+app.use('/api/users', userRoutes);
+
 
 // Error handling middleware (optional, customize as needed)
 app.use((err, req, res, next) => {

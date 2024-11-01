@@ -9,3 +9,4 @@ router.delete('/profile', protect, deleteProfile);
 router.get('/', protect, adminOnly, getAllUsers);
 
 module.exports = router;
+    
