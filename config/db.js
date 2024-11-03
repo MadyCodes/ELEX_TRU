@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const MONGO_URI = 'mongodb+srv://Madycodes:Mm36780345%21%40@cluster0.gxfutgv.mongodb.net/MERN_Elex';
+const MONGO_URI = 
 
 const connectDB = async () => {
   try {
